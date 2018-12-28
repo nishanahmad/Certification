@@ -23,7 +23,7 @@ $("#login-button").click(function(event){
 				else
 					echo '<h1>COMPANY NAME</h1>';																								?>						
 				<form class="form" name="frmUser" method="post" action="user_login_session.php">
-					<input type="text" name="user_name" placeholder="Username" required>
+					<input type="text" name="name" placeholder="Username" required>
 					<input type="password" name='password' placeholder="Password" required> 			
 					<button type="submit" id="login-button">Login</button>
 				</form>

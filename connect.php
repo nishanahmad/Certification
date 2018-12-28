@@ -1,5 +1,5 @@
 <?php	
-	$con=mysqli_connect("localhost","nishan","darussalam123.","nas");
+	$con=mysqli_connect("localhost","nishan","darussalam123.","certification");
 	// Check connection
 	if ($con->connect_error) 
 	{

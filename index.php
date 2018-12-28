@@ -1,62 +1,72 @@
 <?php
 session_start();
-if(isset($_SESSION["user_name"]) && $_SESSION["role"] != 'driver')
+if(isset($_SESSION['id']))
 {																						?>
 <html>
-<style type="text/css">
-a{
-  text-decoration:none;
-}
-</style>
-<head>
-<title>HOME</title>
-<link rel="stylesheet" type="text/css" href="css/index.css" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+	<head>
+		<title>HOME</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<script type="text/javascript" language="javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" language="javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
 
-<div class="background">
-</div>
-<div class="container">
-  <div class="row">
-    <h1><img alt='Add' title='Add New' src='images/logo.png' width='300px' height='50px'/></h1>
-    <h4></h4>
-  </div>
-  <hr/>
-</div>
-   
-<br><br> 
-
-	<div class="row">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="#">WebSiteName</a>
+			</div>
+		  </div>
+		</nav>
 	
-	<a href="sales/todayList.php?ar=all" class="btn lg ghost">TODAY SALES</a>
-    <br><br><br>
-
-	<a href="sales/list.php" class="btn lg ghost">ALL SALES</a>
-    <br><br><br><br>
-		
-	<a href="reports/totalSalesAR.php" class="btn lg ghost">SALES SUMMARY</a>
-    <br><br><br>
+		<br/><br/><br/><br/>
 	
-   	<a href="Target/" class="btn lg ghost">TARGET</a>
-    <br><br><br>	
-	
-   	<a href="SpecialTarget/" class="btn lg ghost">SPECIAL TARGET</a>
-    <br><br><br>		
-	
-   	<a href="indexParty.php" class="btn lg ghost">PARTY</a>
-    <br><br><br>			
-	
-	<a href="Sheet/" class="btn lg ghost">SHEET DELIVERY</a>
-    <br><br><br>		
-
-	</div>
-</body>
+		<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,900" rel="stylesheet">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-4">
+			  <div class="card card-1" onclick="location.href='course1/introduction.html';">
+				<h3>Patient Identification</h3>
+				<p>Enter description here.Enter description here.Enter description here</p>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+					20%
+				  </div>
+				</div>				
+			  </div>
+			</div>
+			<div class="col-md-4">
+			  <div class="card card-2">
+				<h3>Course 2</h3>
+				<p>Enter description here.Enter description here.Enter description here</p>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+					Not Started
+				  </div>
+				</div>								  
+			  </div>
+			</div>
+			<div class="col-md-4">
+			  <div class="card card-3">
+				<h3>Course 3</h3>
+				<p>Enter description here.Enter description here.Enter description here</p>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+					50%
+				  </div>
+				</div>				  
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</body>
 </html>
 <?php
 }
-else if(isset($_SESSION["user_name"]) && $_SESSION["role"] == 'driver')
-	header("Location:Sheet/index.php");
 else
 	header("Location:loginPage.php");
 ?>
