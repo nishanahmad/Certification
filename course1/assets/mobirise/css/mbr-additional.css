@@ -3306,28 +3306,14 @@ body {
   height: 25px;
   border-radius: 50%;
 }
-.cid-rbUygT0w75 {
+.cid-rdv52J4zTP {
   padding-top: 0px;
   padding-bottom: 0px;
-  background-color: #efefef;
+  background-color: #ffffff;
 }
-.cid-rbUygT0w75 .line {
-  background-color: #149dcc;
-  color: #149dcc;
-  align: center;
-  height: 2px;
-  margin: 0 auto;
-}
-.cid-rbUygT0w75 .section-text {
-  padding: 2rem 0;
-}
-.cid-rbUygT0w75 .inner-container {
-  margin: 0 auto;
-}
-@media (max-width: 768px) {
-  .cid-rbUygT0w75 .inner-container {
-    width: 100% !important;
-  }
+.cid-rdv52J4zTP .mbr-text,
+.cid-rdv52J4zTP blockquote {
+  color: #767676;
 }
 .cid-rbUyD5DkyC {
   padding-top: 60px;
